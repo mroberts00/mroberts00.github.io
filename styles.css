@@ -325,7 +325,11 @@ p {
     width: 100%;
     flex-direction: column;
     display: inline-block;
-    
+}
+
+.blog p {
+    width: 70%; 
+    margin: 0 auto;
 }
 
 .contact {
@@ -335,15 +339,10 @@ p {
     display: inline-block;
 }
 
-.contact-text {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .contact p {
     font-size: 25px;
     width: 70%; 
+    margin: 0 auto;
 }
 
 .contact-images img{
