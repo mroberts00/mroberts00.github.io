@@ -1,0 +1,393 @@
+
+
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('LeagueSpartan-Bold.otf');
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    padding: 20px 40px;
+    font-size: 25px;
+    display: inline-flex;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+    nav.navbar {
+    height: 4em;
+    bottom: 0;
+    z-index: 99;
+    position: absolute;
+    align-items: center;
+    background: rgba(0,0,0,0);
+    right: 28%;
+    transition: all 1s;
+    
+}
+
+
+nav.sticky {
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    background: grey;
+    top: 0;
+    right: 0;
+    }
+
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+.active {
+    background-color: aqua;
+    border: 3px solid red;
+    z-index: 99;
+}
+
+.hero-image {
+    background-image: url("img/valleytopeak.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white ;
+}
+
+
+
+.hero-text {
+    margin-left: 20%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color:rgba(0, 0, 0, 0.5);*/
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .hero-image .btn {
+      display: inline-block;
+      width: 250px;
+      border: 3px solid white;
+      border-radius: 5px;
+      padding: 0.5em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 20%;
+      text-align: center;
+      font-size: 2em;
+      color: white;
+      background: rgba(0,0,0,0);
+      transition: all 0.3s;
+
+  }
+
+  .mdi-arrow-right {
+     display: inline-block;
+     font: normal normal normal 30px/1 "Material Design Icons";
+     text-rendering: auto;
+     font-size: inherit;
+     transition: all 0.3s;
+     
+ }
+
+.btn:hover {
+    background: #00cafd;
+    cursor: pointer;
+}
+
+.btn:hover .mdi {
+    transform: rotate(90deg);
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    
+}
+
+
+
+.content h1 {
+    margin-top: 100px;
+    font-size: 60px;
+    width: 300px;
+    color: rgb(65, 64, 64);
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    font-family: 'LeagueSpartan';
+    
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.about {
+    width: 100%;
+    flex-direction: column;
+}
+.work {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+}
+.coder-academy {
+    flex-direction: column; 
+    justify: center;
+    margin-top: 30px;    
+    border-radius: 30px;
+    background-color: rgb(132, 132, 133);
+    padding: 20px;
+}
+
+.commsec {
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: rgb(132, 132, 133);
+    padding: 20px;
+}
+
+p {
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'LeagueSpartan'; */
+
+}
+
+.about p {
+    width: 26em;
+    font-size: 18px;
+    color: white;
+}
+
+#tagline {
+    color: blue;
+    font-size: 25px;
+    width: 70%;
+    display: inline-block;
+
+}
+
+.lang-icons {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+}
+
+.lang-icons img {
+    height: 30px;
+}
+
+.html {
+    transition: 1.5s;
+    transition-delay: 0.75s;
+}
+
+.css {
+    transition: 1.5s;
+    transition-delay: 2.25s;
+    
+}
+
+.ruby {
+    transition: 1.5s;
+    transition-delay: 3.75s;
+    
+}
+
+.rails {
+    transition: 1.5s;    
+}
+
+.js {
+    transition: 3s;
+    transition-delay: 4.5s;
+    
+}
+
+.react {
+    transition: 1.5s;
+    transition-delay: 1.5s;
+    
+}
+
+.node {
+    transition: 1.5s;
+    transition-delay: 3s;
+    
+}
+
+.about:hover .lang {
+    transform: scale3d(1.5,1.5,1.5) rotate(360deg);
+}
+
+.portfolio {
+    width: 100%;
+    flex-direction: column;
+}
+
+
+#cafe-app-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    font-size: 20px;
+}
+
+#cafe-app-link img {
+    padding: 10px;
+}
+
+.portfolio-pics {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.portfolio-pics img {
+    transition: all 0.3s;
+}
+
+.portfolio-pics img:hover {
+    transform: scale3d(1.5,1.5,1.5);
+}
+
+#avengers-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    font-size: 20px;
+}
+
+#avengers-link img {
+    padding: 10px;
+}
+
+.portfolio-text {
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    display: inline-block;
+}
+
+.portfolio-pics {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.portfolio-pics img {
+    transition: all 0.3s;
+}
+
+.portfolio-pics img:hover {
+    transform: scale3d(1.5,1.5,1.5);
+}
+
+.blog {
+    width: 100%;
+    flex-direction: column;
+    display: inline-block;
+    
+}
+
+.contact {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    display: inline-block;
+}
+
+.contact-text {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact p {
+    font-size: 25px;
+    width: 70%; 
+}
+
+.contact-images img{
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-images img:hover {
+    border: 10px solid rgba(0,0,0,0);
+    border-radius: 40px;
+    background-color: rgba(0, 255, 255, 0.5)
+}
+
+footer {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.copyright {
+    display: inline-flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.copyright {
+    min-height: 140px;
+}
+.copyright img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
