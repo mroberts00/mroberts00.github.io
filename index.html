@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Mat Roberts | Web Developer</title>
+        <meta name="description" content="Mat Roberts is a full stack developer for hire based in Sydney, Australia">
+        <meta name="keywords" content="developer, HTML, CSS, Ruby, rails, javascript">
+        <meta name="author" content="Mat Roberts">
+        <meta property="og:url" content="https://mroberts00.github.io">
+        <meta property="og:title" content="Mat Roberts | Web Developer">
+        <meta property="og:description" content="Mat Roberts is a full stack developer for hire based in Sydney, Australia">
+        <meta property="og:image" content="img/valleytopeak.jpg">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -35,7 +42,7 @@
                 <div class='work'>
                     <div class="coder-academy"> 
                         <img src='img/coder-academy.png' alt="Code Academy logo" height='150px'>
-                        <p>I attended the Fast Track Bootcamp at Coder Academy's Sydney campus in 2018. Over six intensive months I became proficient in Ruby, Rails, Javacript, ReactJS, NodeJS, HTML and CSS.</p>
+                        <p>I attended the Fast Track Bootcamp at Coder Academy's Sydney campus in 2018. Over six intensive months I became proficient in Ruby, Rails, Javacript, ReactJS, NodeJS, HTML and CSS and I'm eager to keep on learning!</p>
                     </div>
                     <div class="commsec">
                         <img src="img/commsec.png" alt="CommSec logo" height='150px'>
@@ -51,7 +58,10 @@
                     <img class="lang react" src="img/react.png" alt="React JS logo spinning">
                     <img class="lang node" src="img/node.png" alt="Node JS logo spinning">
                 </div>
+                <div class="about-bottom">
                 <p id='tagline'>I specialise in responsive and dynamic design, delivering on time client solutions that are sure to surpass your expectations!</p>
+                <p id="outside-coding">Outside coding I like to run, ski and play live music. I spend my holidays travelling the world and my Tuesday nights volunteering at <a href="http://www.orangeskylaundry.com.au/" target="_blank">Orange Sky Showers.</a></p>
+            </div>
             </div>
             <div id="portfolio" class='portfolio'>
                 <h1>portfolio</h1>
@@ -71,7 +81,7 @@
                     <h2>Recreating the Avengers Poster</h2>
                     <p class='portfolio-text'>Using HTML and CSS I recreated the Avengers Infinity War poster, including an embedded YouTube video!</p>
                     <div id='avengers-link'>
-                        <p>To see the code for this project, please click here</p>
+                        <p>To see the code for this project, please click here </p>
                         <a href="https://codepen.io/mat-r/pen/NyvadZ" target="_blank"><img src="img/codepen.png" height='30px' alt="codepen logo"></a>
                     </div>
                     <div class='portfolio-pics'>
@@ -83,7 +93,7 @@
                     <h1>blog</h1>
                     <div class='blog-posts'>
                         <div class='blog-post-one'>
-                            <a href="https://medium.com/@MatRoberts/how-i-prepared-for-my-first-week-at-a-coding-bootcamp-94b5eb7d945" target="_blank"><h3>How I prepared for my first week at a Coding Bootcamp.</h3></a>
+                            <a href="https://medium.com/@MatRoberts/how-i-prepared-for-my-first-week-at-a-coding-bootcamp-94b5eb7d945" target="_blank"><h3>How I prepared for my first week at a Coding Bootcamp</h3></a>
                             <h4>20 FEB 2018</h4>
                         </div>
                         <div class='blog-post-two'>
@@ -108,10 +118,10 @@
             </div>
         </main>
         <footer>
-            <div class='copyright'>
-                    <p>Thanks for visiting! I'm constantly updating this page as my career progresses so please check back soon to see what I've been up to.</p>
-                <br>    
-                
+            <div class='goodbye'>
+                <h4>Thanks for visiting! I'm constantly updating this page as my career progresses so please check back soon to see what I've been up to.</h4>            
+            </div>
+                <div class='copyright'>
                 <img src='img/copyright.png'>
                 <p>2018 - Mat Roberts. Made in Australia.</p>
             </div>
@@ -167,36 +177,8 @@ $('a[href*="#"]')
   });
 // end scroll jquery
 
-// JS active navbar
 
- var sections = $('content')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
 
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-  
-  content.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-    
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('nav.sticky a').removeClass('active');
-      sections.removeClass('active');
-      
-      $(this).addClass('active');
-      nav.find('nav.sticky a[href="#'+$(this).attr('id')+'"]').addClass('active');
-    }
-  });
-});
-
-nav.find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
-  
-  
-  return false;
-});
 </script>
 
     </body>

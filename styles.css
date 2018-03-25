@@ -1,6 +1,4 @@
 
-
-
 @font-face {
     font-family: LeagueSpartan;
     src: url('LeagueSpartan-Bold.otf');
@@ -21,8 +19,8 @@ nav ul {
     overflow: hidden;
 }
 nav li {
-    padding: 25px 40px;
-    font-size: 25px;
+    padding: 1.8vw 2.5vw;
+    font-size: 1.7em;
     display: inline-flex;
 }
 
@@ -30,8 +28,12 @@ nav.navbar ul li a {
     color: white;
     text-decoration: none;
 }
+
+nav.navbar ul li a:hover {
+    color: aqua;
+}
 nav.navbar {
-    height: 5em;
+    height: 5.5em;
     bottom: 0;
     z-index: 99;
     position: absolute;
@@ -48,7 +50,6 @@ nav.sticky {
     width: 100%;
     background-color:rgb(230, 230, 230);
     text-shadow: 2px 2px rgba(0,0,0,0);
-    
     top: 0;
     right: 0;
     }
@@ -60,9 +61,6 @@ nav.sticky ul li a {
 
 nav.sticky ul li a:hover {
     color: rgb(255, 0, 64);
-}
-a.active {
-
 }
 
 .hero-image {
@@ -90,12 +88,12 @@ a.active {
     transform: translate(-50%, -50%);
     /*background-color:rgba(0, 0, 0, 0.5);*/
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1em;
   }
 
   .hero-image .btn {
       display: inline-flex;
-      width: 260px;
+      width: 18vw;
       border: 3px solid white;
       border-radius: 5px;
       padding: 0.5em;
@@ -135,10 +133,10 @@ a.active {
 
 
 .content h1 {
-    font-size: 60px;
-    width: 300px;
+    font-size: 4em;
+    /* width: 300px; */
     color: rgb(65, 64, 64);
-    margin: 100px auto 30px auto;
+    margin: 9vw auto 1vw auto;
     justify-content: center;
     font-family: 'LeagueSpartan';
 }
@@ -153,48 +151,23 @@ a.active {
     justify-content: space-evenly;
     align-items: top;
 }
-.coder-academy {
-    border-radius: 30px;
-    padding: 20px;
-    /* border: 2px solid black; */
-}
-
-.commsec {
-    border-radius: 30px;
-    /* border: 2px solid black; */
-    padding: 20px;
-}
-
-p {
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'LeagueSpartan'; */
-
-}
 
 .about p {
     width: 26em;
-    font-size: 18px;
+    font-size: 1.2em;
     /* color: white; */
-}
-
-#tagline {
-    color: blue;
-    font-size: 25px;
-    width: 70%;
-    display: inline-block;
-
 }
 
 .lang-icons {
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 18vw;
     align-items: center;
 }
 
 .lang-icons img {
-    height: 30px;
+    height: 3vw;
 }
 
 .html {
@@ -235,26 +208,53 @@ p {
     transform: scale3d(1.7,1.7,1.7) rotate(360deg);
 }
 
+.about-bottom {
+    background: rgb(226, 226, 226);
+    padding: 2vw;
+}
+
+#tagline {
+    color: black;
+    font-size: 1.5vw;
+    width: 70%;
+    display: inline-block;
+
+}
+
+#outside-coding {
+    color:black;
+    font-size: 1.5vw;
+    width: 70%;
+    display: inline-block;
+}
+
+#outside-coding a{
+    text-decoration: none;
+    color: rgb(226, 139, 9)
+}
 .portfolio {
     width: 100%;
     flex-direction: column;
 }
 
 .portfolio h2 {
-    margin-top: 50px;
+    margin-top: 3vw;
 }
 
+.portfolio p {
+    font-size: 1.3em;
+}
 
 #cafe-app-link {
     display: inline-flex;
     justify-content: center;
     align-items: center; 
     width: 100%;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 #cafe-app-link img {
-    padding: 10px;
+    padding: 0.5vw;
 }
 
 .portfolio-pics {
@@ -262,7 +262,6 @@ p {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
 }
 
 .portfolio-pics img {
@@ -278,11 +277,7 @@ p {
     justify-content: center;
     align-items: center; 
     width: 100%;
-    font-size: 20px;
-}
-
-#avengers-link img {
-    padding: 10px;
+    font-size: 1em;
 }
 
 .portfolio-text {
@@ -297,7 +292,7 @@ p {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    padding: 20px;
+    padding: 1.5vw;
 }
 
 .portfolio-pics img {
@@ -363,7 +358,7 @@ p {
 }
 
 .contact p {
-    font-size: 25px;
+    font-size: 1.7em;
     width: 70%; 
     margin: 10vh auto 0 auto;
 }
@@ -375,44 +370,48 @@ p {
 .contact-images img{
     box-sizing: border-box;
     display: inline-flex;
-    padding: 20px;
+    padding: 1.5vw;
     margin: 0 2vw;
     border: 1px solid rgba(0,0,0,0);
     border-radius: 20px;
-    width: 180px;
-    height: 180px;
+    width: 15vw;
+    height: 15vw;
     background-color: rgba(0,0,0,0);
     transition: all 0.3s ease-in-out;
 }
 
 .contact-images img:hover {
     border: 10px solid rgba(0,0,0,0);
-    border-radius: 40px;
+    border-radius: 4vw;
     background-color: rgba(0, 255, 255, 0.5)
 }
 
 footer {
     background-color: rgb(240, 240, 240);
+    width: 100%;
+}
+
+.goodbye {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+    font-size: 1.2em;
 }
 
 .copyright {
     display: inline-flex;
-    margin: 10px;
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 10vw;
+    text-align: center;
+    font-size: 1.2em;
 }
 
-.copyright {
-    min-height: 140px;
-}
 .copyright img {
     width: 20px;
     height: 20px;
-    
 }
 
 
