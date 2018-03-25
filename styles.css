@@ -10,7 +10,7 @@
 body {
     height: 100%;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -21,25 +21,24 @@ nav ul {
     overflow: hidden;
 }
 nav li {
-    padding: 20px 40px;
+    padding: 25px 40px;
     font-size: 25px;
     display: inline-flex;
 }
 
-.navbar ul li a {
+nav.navbar ul li a {
     color: white;
     text-decoration: none;
 }
-    nav.navbar {
-    height: 4em;
+nav.navbar {
+    height: 5em;
     bottom: 0;
     z-index: 99;
     position: absolute;
-    align-items: center;
-    background: rgba(0,0,0,0);
+    /* background: rgba(0,0,0,0.3); */
+    text-shadow: 2px 2px black;
     right: 28%;
     transition: all 1s;
-    
 }
 
 
@@ -47,19 +46,23 @@ nav.sticky {
     position: fixed;
     text-align: right;
     width: 100%;
-    background: grey;
+    background-color:rgb(230, 230, 230);
+    text-shadow: 2px 2px rgba(0,0,0,0);
+    
     top: 0;
     right: 0;
     }
 
-
-.navbar ul li a:hover {
-    color: aqua;
+nav.sticky ul li a {
+    color: rgb(0, 132, 255);
 }
-.active {
-    background-color: aqua;
-    border: 3px solid red;
-    z-index: 99;
+
+
+nav.sticky ul li a:hover {
+    color: rgb(255, 0, 64);
+}
+a.active {
+
 }
 
 .hero-image {
@@ -91,37 +94,31 @@ nav.sticky {
   }
 
   .hero-image .btn {
-      display: inline-block;
-      width: 250px;
+      display: inline-flex;
+      width: 260px;
       border: 3px solid white;
       border-radius: 5px;
       padding: 0.5em;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 20%;
       text-align: center;
       font-size: 2em;
       color: white;
       background: rgba(0,0,0,0);
       transition: all 0.3s;
+      align-items: center;
 
   }
-
-  .mdi-arrow-right {
-     display: inline-block;
-     font: normal normal normal 30px/1 "Material Design Icons";
-     text-rendering: auto;
-     font-size: inherit;
-     transition: all 0.3s;
-     
- }
 
 .btn:hover {
     background: #00cafd;
     cursor: pointer;
 }
 
-.btn:hover .mdi {
+.btn img{
+    margin-left: 0.5vw;
+    transition: all 0.3s;
+}
+
+.btn:hover img {
     transform: rotate(90deg);
 }
 
@@ -139,16 +136,12 @@ nav.sticky {
 
 
 .content h1 {
-    margin-top: 100px;
     font-size: 60px;
     width: 300px;
     color: rgb(65, 64, 64);
-    display: flex;
+    margin: 100px auto 30px auto;
     justify-content: center;
-    display: inline-block;
     font-family: 'LeagueSpartan';
-    
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 .about {
@@ -162,18 +155,14 @@ nav.sticky {
     align-items: top;
 }
 .coder-academy {
-    flex-direction: column; 
-    justify: center;
-    margin-top: 30px;    
     border-radius: 30px;
-    background-color: rgb(132, 132, 133);
     padding: 20px;
+    /* border: 2px solid black; */
 }
 
 .commsec {
-    margin-top: 30px;
     border-radius: 30px;
-    background-color: rgb(132, 132, 133);
+    /* border: 2px solid black; */
     padding: 20px;
 }
 
@@ -186,7 +175,7 @@ p {
 .about p {
     width: 26em;
     font-size: 18px;
-    color: white;
+    /* color: white; */
 }
 
 #tagline {
@@ -217,13 +206,11 @@ p {
 .css {
     transition: 1.5s;
     transition-delay: 2.25s;
-    
 }
 
 .ruby {
     transition: 1.5s;
     transition-delay: 3.75s;
-    
 }
 
 .rails {
@@ -233,28 +220,29 @@ p {
 .js {
     transition: 3s;
     transition-delay: 4.5s;
-    
 }
 
 .react {
     transition: 1.5s;
     transition-delay: 1.5s;
-    
 }
 
 .node {
     transition: 1.5s;
     transition-delay: 3s;
-    
 }
 
 .about:hover .lang {
-    transform: scale3d(1.5,1.5,1.5) rotate(360deg);
+    transform: scale3d(1.7,1.7,1.7) rotate(360deg);
 }
 
 .portfolio {
     width: 100%;
     flex-direction: column;
+}
+
+.portfolio h2 {
+    margin-top: 50px;
 }
 
 
@@ -324,12 +312,48 @@ p {
 .blog {
     width: 100%;
     flex-direction: column;
-    display: inline-block;
+    display: flex;
+    display: block;
 }
 
-.blog p {
-    width: 70%; 
-    margin: 0 auto;
+.blog-posts {
+    display: inline-flex;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.blog-post-one {
+    background-image: url('img/page.png');
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    margin: 0 3vw;
+}
+
+.blog-post-two {
+    background-image: url('img/page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 30vw;
+    margin: 0 3vw;
+    
+}
+.blog-posts h3 {
+    max-width: 25vw;
+    margin: 5vw auto 2vw auto;
+    font-size: 2.5vw;
+}
+.blog-posts h4 {
+    max-width: 25vw;
+    margin: 1vw auto 2vw auto;
+    font-size: 1.5vw;
+}
+
+.blog-posts a {
+    text-decoration: none;
+    color: black;
 }
 
 .contact {
@@ -342,14 +366,18 @@ p {
 .contact p {
     font-size: 25px;
     width: 70%; 
-    margin: 0 auto;
+    margin: 10vh auto 0 auto;
+}
+
+.contact-images {
+    padding: 10vh 0;
 }
 
 .contact-images img{
     box-sizing: border-box;
     display: inline-flex;
     padding: 20px;
-    margin: 30px;
+    margin: 0 2vw;
     border: 1px solid rgba(0,0,0,0);
     border-radius: 20px;
     width: 180px;

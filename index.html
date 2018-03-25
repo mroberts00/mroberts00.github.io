@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Mat Roberts | Web Developer</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="img/mat.png">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -13,17 +15,17 @@
     <body>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="#about" class="navlink">About</a></li>
-                <li><a href="#portfolio" class="navlink">Portfolio</a></li>
-                <li><a href="#blog" class="navlink">Blog</a></li>
-                <li><a href="#contact" class="navlink">Contact</a></li>
+                <li><a href="#about" class="nav link">About</a></li>
+                <li><a href="#portfolio" class="nav link">Portfolio</a></li>
+                <li><a href="#blog" class="nav link">Blog</a></li>
+                <li><a href="#contact" class="nav link">Contact</a></li>
             </ul>
         </nav>
-        <section id="home" class="hero-image">
+        <section id="home" class="hero-image" title="Mat running through the canadian mountains">
 
             <div class="hero-text">
-                <h1>Hi, my name's Mat. I'm a full stack devloper from Sydney, Australia</h1>
-                <a href="#about" class="btn">Tell me more</a>
+                <h1>Hi, my name's Mat. I'm a full stack devloper from Sydney, Australia.</h1>
+                <a href="#about" class="btn">Tell me more<img src="img/arrow.png"></a>
             </div>
             
         </section>   
@@ -32,22 +34,22 @@
                 <h1>about me</h1>
                 <div class='work'>
                     <div class="coder-academy"> 
-                        <img src='img/coder-academy.png' height='150px'>
+                        <img src='img/coder-academy.png' alt="Code Academy logo" height='150px'>
                         <p>I attended the Fast Track Bootcamp at Coder Academy's Sydney campus in 2018. Over six intensive months I became proficient in Ruby, Rails, Javacript, ReactJS, NodeJS, HTML and CSS.</p>
                     </div>
                     <div class="commsec">
-                        <img src="img/commsec.png" height='150px'>
+                        <img src="img/commsec.png" alt="CommSec logo" height='150px'>
                         <p>My non-coding experience includes two years working as an Equities Associate for CommSec, Australia's largest online stockbroker. I have also worked in the hospitality and retail secotors including in management positions.</p>
                     </div>
                 </div>
                 <div class='lang-icons'>
-                    <img class="lang html" src="img/html.png">
-                    <img class="lang css" src="img/css.svg">
-                    <img class="lang ruby" src="img/ruby.png">
-                    <img class="lang rails" src="img/rails.png">
-                    <img class="lang js" src="img/javascript.png">
-                    <img class="lang react" src="img/react.png">
-                    <img class="lang node" src="img/node.png">
+                    <img class="lang html" src="img/html.png" alt="html logo spinning">
+                    <img class="lang css" src="img/css.svg" alt="css logo spinning">
+                    <img class="lang ruby" src="img/ruby.png" alt="ruby logo spinning">
+                    <img class="lang rails" src="img/rails.png" alt="ruby on rails logo spinning">
+                    <img class="lang js" src="img/javascript.png" alt="javascript logo spinning">
+                    <img class="lang react" src="img/react.png" alt="React JS logo spinning">
+                    <img class="lang node" src="img/node.png" alt="Node JS logo spinning">
                 </div>
                 <p id='tagline'>I specialise in responsive and dynamic design, delivering on time client solutions that are sure to surpass your expectations!</p>
             </div>
@@ -58,11 +60,11 @@
                     <p class='portfolio-text'> A simple to use ruby terminal app that takes the hassle out of your morning cofee order! With the ability to sort the menu for dietary requirements and store orders under different names, everyone in the office can order at the same time and pay separately. Never get stuck paying for Joe's chocolate brownie again!</p>
                     <div id="cafe-app-link">
                         <p>To download this project please click here </p>
-                        <a href="https://www.github.com/mroberts00/cafe_app" target="_blank"><img src="img/github.png" height='30px'></a>
+                        <a href="https://www.github.com/mroberts00/cafe_app" target="_blank"><img src="img/github.png" height='30px' alt="github logo"></a>
                     </div>
                     <div class='portfolio-pics'>
-                        <img src='img/cafe-app-2.png' height="300px">                    
-                        <img src='img/cafe-app-1.png' height="300px">
+                        <img src='img/cafe-app-2.png' height="300px" alt="cafe app ordering page - vegetarian options displayed">                    
+                        <img src='img/cafe-app-1.png' height="300px" alt="cafe app checkout page - items grouped under each name">
                     </div>
                 </div>
                 <div class='avengers'>
@@ -70,32 +72,37 @@
                     <p class='portfolio-text'>Using HTML and CSS I recreated the Avengers Infinity War poster, including an embedded YouTube video!</p>
                     <div id='avengers-link'>
                         <p>To see the code for this project, please click here</p>
-                        <a href="https://codepen.io/mat-r/pen/NyvadZ" target="_blank"><img src="img/codepen.png" height='30px'></a>
+                        <a href="https://codepen.io/mat-r/pen/NyvadZ" target="_blank"><img src="img/codepen.png" height='30px' alt="codepen logo"></a>
                     </div>
                     <div class='portfolio-pics'>
-                        <img src='img/avengers.png'height='400px'>
+                        <img src='img/avengers.png'height='400px' alt="Avengers Infinity War movie poster with link to youtube trailer">
                     </div>
                 </div>        
             </div>
             <div id="blog" class='blog'>
                     <h1>blog</h1>
-                    <img src='img/medium.svg' height='100px'>
-                    <h2 class='blog-title'>How I prepared for my first week at a Coding Bootcamp</h2>
-                    <p class='blog-description'>A few months ago I had never written a line of code, I had no idea what HTML or CSS was, and I thought Bootstrap was, well, the obvious. After a couple of years in the banking and finance world and far too many years in the ever exciting retail game I was pushed into trying out coding by my girlfriend. I resisted at first, a lot. </p>
+                    <div class='blog-posts'>
+                        <div class='blog-post-one'>
+                            <a href="https://medium.com/@MatRoberts/how-i-prepared-for-my-first-week-at-a-coding-bootcamp-94b5eb7d945" target="_blank"><h3>How I prepared for my first week at a Coding Bootcamp.</h3></a>
+                            <h4>20 FEB 2018</h4>
+                        </div>
+                        <div class='blog-post-two'>
+                            <a href="https://medium.com/@MatRoberts/did-my-bootcamp-preparation-actually-help-4d30154f12fc" target="_blank"><h3>Did my bootcamp preparation actually help?</h3></a>
+                            <h4>25 MAR 2018</h4>
+                        </div>
+                    </div>
             </div>        
-            
-            
             <div id="contact">
                 <div class='contact'>
                     <h1>contact</h1>
-                    <div class='contact text'>
+                    <div>
                         <p>I want to work with you to create something amazing. Please feel free to contact me any time to inquire about possible projects or just to chat! You can also check out my  full body of work through the links below.</p>
                     </div>
                     <div class='contact-images'>
-                        <a href='https://www.github.com/mroberts00' target="_blank"><img src='img/github.png'></a>
-                        <a href='https://www.linkedin.com/in/mat-roberts-a9466b15b/' target="_blank"><img src='img/linkedIn.png' alt="linkedIn logo"></a>
-                        <a href='https://www.medium.com/@MatRoberts' target="_blank"><img src='img/medium.svg'></a>
-                        <a href='https://codepen.io/mat-r' target="_blank"></a><img src='img/codepen.png' ></a>
+                        <a href='https://www.github.com/mroberts00' target="_blank"><img src='img/github.png' alt="github logo"></a>
+                        <a href='https://www.linkedin.com/in/mat-roberts-a9466b15b/' target="_blank"><img src='img/linkedIn.png' alt="linkedin logo"></a>
+                        <a href='https://www.medium.com/@MatRoberts' target="_blank"><img src='img/medium.svg' alt="medium logo"></a>
+                        <a href='https://codepen.io/mat-r' target="_blank"></a><img src='img/codepen.png' alt="codepen logo"></a>
                     </div>
                 </div>
             </div>
