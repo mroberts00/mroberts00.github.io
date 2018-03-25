@@ -38,7 +38,6 @@ nav.navbar {
     bottom: 0;
     z-index: 99;
     position: absolute;
-    /* background: rgba(0,0,0,0.3); */
     text-shadow: 2px 2px black;
     right: 28%;
     transition: all 1s;
@@ -91,18 +90,18 @@ nav.sticky ul li a:hover {
     border-radius: 1em;
   }
 
-  .hero-image .btn {
-      display: inline-flex;
-      width: 18vw;
-      border: 3px solid white;
-      border-radius: 5px;
-      padding: 0.5em;
-      text-align: center;
-      font-size: 2em;
-      color: white;
-      background: rgba(0,0,0,0);
-      transition: all 0.3s;
-      align-items: center;
+.hero-image .btn {
+    display: inline-flex;
+    width: 18vw;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    background: rgba(0,0,0,0);
+    transition: all 0.3s;
+    align-items: center;
   }
 
 .btn:hover {
@@ -211,6 +210,9 @@ nav.sticky ul li a:hover {
     padding: 2vw;
     font-size: 1.5vw;
 }
+.about-bottom p {
+    margin: 2vw;
+}
 
 #tagline {
     color: black;
@@ -266,7 +268,7 @@ nav.sticky ul li a:hover {
 }
 
 .portfolio-pics img:hover {
-    transform: scale3d(1.5,1.5,1.5);
+    transform: scale3d(1.7,1.7,1.7);
 }
 
 #avengers-link {
