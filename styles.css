@@ -13,6 +13,8 @@ body {
     font-size: 16px;
 }
 
+/* Nav bar code */
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -64,6 +66,8 @@ nav.sticky ul li a {
 nav.sticky ul li a:hover {
     color: rgb(255, 0, 64);
 }
+
+/* Home page code */
 
 .hero-image {
     background-image: url("img/valleytopeak.jpg");
@@ -119,6 +123,7 @@ nav.sticky ul li a:hover {
 .btn:hover img {
     transform: rotate(90deg);
 }
+/* about to contact */
 
 .content {
     width: 100%;
@@ -138,6 +143,8 @@ nav.sticky ul li a:hover {
     justify-content: center;
     font-family: 'LeagueSpartan', sans-serif;
 }
+
+/* About section */
 
 .about {
     width: 100%;
@@ -164,6 +171,8 @@ nav.sticky ul li a:hover {
     font-size: 1.2em;
     margin: 0 auto;
 }
+
+/* The coding language icons with transition and transform */
 
 .lang-icons {
     justify-content: center;
@@ -221,6 +230,9 @@ nav.sticky ul li a:hover {
     padding: 2vw;
     font-size: 1.5vw;
 }
+
+/* More about me */
+
 .about-bottom p {
     margin: 2vw;
 }
@@ -242,6 +254,9 @@ nav.sticky ul li a:hover {
     text-decoration: none;
     color: rgb(226, 139, 9)
 }
+
+/* List of my projects */
+
 .portfolio {
     width: 100%;
     flex-direction: column;
@@ -302,6 +317,8 @@ nav.sticky ul li a:hover {
     transition: all 0.3s;
 }
 
+/* Blog posts */
+
 .blog {
     width: 100%;
     flex-direction: column;
@@ -350,6 +367,8 @@ nav.sticky ul li a:hover {
     color: black;
 }
 
+/* Contact section */
+
 .contact {
     width: 100%;
     flex-direction: column;
@@ -386,6 +405,8 @@ nav.sticky ul li a:hover {
     background-color: rgba(0, 255, 255, 0.5)
 }
 
+/* footer with copyright  */
+
 footer {
     background-color: rgb(240, 240, 240);
     width: 100%;
@@ -413,6 +434,9 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+/* Media queries */
+
 @media screen and (max-width: 400px) {
 
     .work p {
