@@ -235,6 +235,7 @@ nav.sticky ul li a:hover {
 
 .about-bottom p {
     margin: 2vw;
+    font-size: 1.1em;
 }
 
 #tagline {
@@ -253,6 +254,16 @@ nav.sticky ul li a:hover {
 #outside-coding a{
     text-decoration: none;
     color: rgb(226, 139, 9)
+}
+
+#bgimg2 {
+    background-image: url('img/iceland.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
 
 /* List of my projects */
@@ -279,7 +290,7 @@ nav.sticky ul li a:hover {
 }
 
 #cafe-app-link img {
-    padding: 0.5vw;
+    padding: 0.7vw;
 }
 
 .portfolio-pics {
@@ -304,6 +315,9 @@ nav.sticky ul li a:hover {
     width: 100%;
     font-size: 1em;
 }
+#avengers-link img {
+    padding: 0.7vw;
+}
 
 .portfolio-text {
     width: 70%;
@@ -315,6 +329,16 @@ nav.sticky ul li a:hover {
 
 .portfolio-pics img {
     transition: all 0.3s;
+}
+
+#bgimg3 {
+    background-image: url('img/mexico.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
 
 /* Blog posts */
@@ -366,6 +390,15 @@ nav.sticky ul li a:hover {
     text-decoration: none;
     color: black;
 }
+#bgimg4 {
+    background-image: url('img/zeus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
 
 /* Contact section */
 
@@ -377,7 +410,7 @@ nav.sticky ul li a:hover {
 }
 
 .contact p {
-    font-size: 1.7em;
+    font-size: 1.3em;
     width: 70%; 
     margin: 10vh auto 0 auto;
 }
@@ -415,9 +448,9 @@ footer {
 .goodbye {
     display: flex;
     justify-content: center;
-    background-color: rgb(240, 240, 240);
     align-items: center;
     font-size: 1.2em;
+    padding-top: 2vw;
 }
 
 .copyright {
@@ -466,21 +499,21 @@ footer {
         text-align: center;
         border-radius: 1em;
         background-color: rgba(0,0,0,0.1)
-      }
+    }
     
-      .hero-image .btn {
-          display: inline-flex;
-          width: 55vw;
-          border: 3px solid white;
-          border-radius: 5px;
-          padding: 0.5em;
-          text-align: center;
-          font-size: 2em;
-          color: white;
-          background: rgba(0,0,0,0);
-          transition: all 0.3s;
-          align-items: center;
-      }
+    .hero-image .btn {
+        display: inline-flex;
+        width: 55vw;
+        border: 3px solid white;
+        border-radius: 5px;
+        padding: 0.5em;
+        text-align: center;
+        font-size: 2em;
+        color: white;
+        background: rgba(0,0,0,0);
+        transition: all 0.3s;
+        align-items: center;
+    }
     .content h1 {
         margin-top: 8vh;
     }
@@ -532,6 +565,7 @@ footer {
     .contact {
         margin-bottom: 10vh;
     }
+
     footer h4{
         max-width: 80vw;
     }
