@@ -308,6 +308,11 @@ nav.sticky ul li a:hover {
     transform: scale3d(1.7,1.7,1.7);
 }
 
+.avengers a {
+    text-decoration: none;
+    color:black;
+}
+
 #avengers-link {
     display: inline-flex;
     justify-content: center;
